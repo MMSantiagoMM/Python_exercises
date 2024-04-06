@@ -7,19 +7,19 @@ squareRoot = list(map(sqrt,numbersList))
 print(squareRoot)
 
 
-names1 = ["Santiago","Carla","Maria","Rosario","Diego"]
+names = ["Santiago","Carla","Maria","Rosario","Diego"]
 vowels = "aeiou"
 
 
-def myFunction2(names):
-    vowelsList = []
-    for i in range(len(names)):
-            if names[i]== vowels[0] or names[i]==vowels[1] or names[i]==vowels[2] or names[i]==vowels[3] or names[i]==vowels[4]:
-                vowelsList.append(names[i])
+def myFunction2(elements):
+    vowelList = []
+    for i in range(len(elements)):
+            if elements[i]== vowels[0] or elements[i]==vowels[1] or elements[i]==vowels[2] or elements[i]==vowels[3] or elements[i]==vowels[4]:
+                vowelList.append(elements[i])
     
-    return vowelsList
+    return vowelList
 
-myNewListVowels2 = list(map(myFunction2,names1))
+myNewListVowels2 = list(map(myFunction2,names))
 
 print(myNewListVowels2)
 
