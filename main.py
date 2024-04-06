@@ -9,20 +9,21 @@ print(squareRoot)
 
 names1 = ["Santiago","Carla","Maria","Rosario","Diego"]
 vowels = "aeiou"
-vowelsList=[];
 
-def myFunction(names):
+
+def myFunction2(names):
     vowelsList = []
     for i in range(len(names)):
-        for j in range(len(names[i])):
-            if names[i][j]== vowels[0] or names[i][j]==vowels[1] or names[i][j]==vowels[2] or names[i][j]==vowels[3] or names[i][j]==vowels[4]:
-                vowelsList.append(names[i][j])
+            if names[i]== vowels[0] or names[i]==vowels[1] or names[i]==vowels[2] or names[i]==vowels[3] or names[i]==vowels[4]:
+                vowelsList.append(names[i])
     
     return vowelsList
 
+myNewListVowels2 = list(map(myFunction2,names1))
 
-myNewListVowels = list(map(myFunction,names1))
+print(myNewListVowels2)
 
-print(myNewListVowels)
+
+
 
 
